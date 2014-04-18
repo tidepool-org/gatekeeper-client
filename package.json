@@ -6,7 +6,7 @@
   "directories": {
     "lib/client": "./lib/client"
   },
-  "repository": "https://github.com/tidepool-org/gatekeeper.git",
+  "repository": "https://github.com/tidepool-org/gatekeeper-client.git",
   "author": {
     "name": "Eric Tschetter",
     "email": "cheddar@tidepool.org",
