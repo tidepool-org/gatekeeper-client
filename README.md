@@ -1,4 +1,4 @@
-gatekeeper-client
-=================
+gatekeeper
+==========
 
-Client library for interacting with gatekeeper
+Authorization client and server for tidepool
