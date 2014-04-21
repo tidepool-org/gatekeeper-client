@@ -2,9 +2,9 @@
   "name": "tidepool-gatekeeper",
   "version": "0.0.3",
   "description": "Authorization server and client",
-  "main": "lib/client/index.js",
+  "main": "lib/index.js",
   "directories": {
-    "lib/client": "./index"
+    "lib": "./lib/index"
   },
   "repository": "https://github.com/tidepool-org/gatekeeper-client.git",
   "author": {

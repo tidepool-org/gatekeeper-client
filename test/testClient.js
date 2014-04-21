@@ -40,7 +40,7 @@ describe('client.js', function() {
 
   describe('userInGroup', function() {
     it('does a request', function(done) {
-      request.callsArgWith(1, null, { statusCode: 200 }, '{ "view": {} }');
+      request.callsArgWith(1, null, { statusCode: 200 }, { "view": {} });
 
       client.userInGroup('1234', 'abcd', function(err, result) {
         expect(result).to.deep.equal({ view: {} });
@@ -77,7 +77,7 @@ describe('client.js', function() {
 
   describe('usersInGroup', function() {
     it('does a request', function(done) {
-      request.callsArgWith(1, null, { statusCode: 200 }, '{ "view": {} }');
+      request.callsArgWith(1, null, { statusCode: 200 }, { "view": {} });
 
       client.usersInGroup('abcd', function(err, result) {
         expect(result).to.deep.equal({ view: {} });
@@ -114,7 +114,7 @@ describe('client.js', function() {
 
   describe('groupsForUser', function() {
     it('does a request', function(done) {
-      request.callsArgWith(1, null, { statusCode: 200 }, '{ "view": {} }');
+      request.callsArgWith(1, null, { statusCode: 200 }, { "view": {} });
 
       client.groupsForUser('1234', function(err, result) {
         expect(result).to.deep.equal({ view: {} });
@@ -151,7 +151,7 @@ describe('client.js', function() {
 
   describe('setPermissions', function() {
     it('does a request', function(done) {
-      request.callsArgWith(1, null, { statusCode: 200 }, '{ "view": {} }');
+      request.callsArgWith(1, null, { statusCode: 200 }, { "view": {} });
 
       client.setPermissions('1234', 'abcd', { view: {} }, function(err, result) {
         expect(result).to.deep.equal({ view: {} });
