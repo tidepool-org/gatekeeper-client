@@ -25,7 +25,7 @@ describe('client.js', function() {
   var request = sinon.stub();
 
   var httpClient = require('amoeba').httpClient({}, request);
-  var tokenGetter = function(){ return token; };
+  var tokenGetter = function(fn){ fn(token); };
   var hostGetter = { get: function(){ return hosts; } };
 
   var client;
