@@ -46,7 +46,7 @@ describe('client.js', function() {
         expect(result).to.deep.equal({ view: {} });
         expect(request).calledWith(
           sinon.match({
-            url: 'http://localhost:1234/authorized/abcd/1234',
+            url: 'http://localhost:1234/permissions/abcd/1234',
             method: 'GET',
             headers: { 'x-tidepool-session-token': '1234'}
           }),
@@ -64,7 +64,7 @@ describe('client.js', function() {
         expect(err).to.deep.equal({ statusCode: 401, message: 'billybobbump' });
         expect(request).calledWith(
           sinon.match({
-                        url: 'http://localhost:1234/authorized/abcd/1234',
+                        url: 'http://localhost:1234/permissions/abcd/1234',
                         method: 'GET',
                         headers: { 'x-tidepool-session-token': '1234'}
                       }),
@@ -83,7 +83,7 @@ describe('client.js', function() {
         expect(result).to.deep.equal({ view: {} });
         expect(request).calledWith(
           sinon.match({
-                        url: 'http://localhost:1234/authorized/abcd',
+                        url: 'http://localhost:1234/permissions/abcd',
                         method: 'GET',
                         headers: { 'x-tidepool-session-token': '1234'}
                       }),
@@ -101,7 +101,7 @@ describe('client.js', function() {
         expect(err).to.deep.equal({ statusCode: 401, message: 'billybobbump' });
         expect(request).calledWith(
           sinon.match({
-                        url: 'http://localhost:1234/authorized/abcd',
+                        url: 'http://localhost:1234/permissions/abcd',
                         method: 'GET',
                         headers: { 'x-tidepool-session-token': '1234'}
                       }),
@@ -120,7 +120,7 @@ describe('client.js', function() {
         expect(result).to.deep.equal({ view: {} });
         expect(request).calledWith(
           sinon.match({
-                        url: 'http://localhost:1234/authorized/group/1234',
+                        url: 'http://localhost:1234/permissions/group/1234',
                         method: 'GET',
                         headers: { 'x-tidepool-session-token': '1234'}
                       }),
@@ -138,7 +138,7 @@ describe('client.js', function() {
         expect(err).to.deep.equal({ statusCode: 401, message: 'billybobbump' });
         expect(request).calledWith(
           sinon.match({
-                        url: 'http://localhost:1234/authorized/group/1234',
+                        url: 'http://localhost:1234/permissions/group/1234',
                         method: 'GET',
                         headers: { 'x-tidepool-session-token': '1234'}
                       }),
@@ -157,7 +157,7 @@ describe('client.js', function() {
         expect(result).to.deep.equal({ view: {} });
         expect(request).calledWith(
           sinon.match({
-                        url: 'http://localhost:1234/authorized/abcd/1234',
+                        url: 'http://localhost:1234/permissions/abcd/1234',
                         method: 'POST',
                         headers: { 'x-tidepool-session-token': '1234', 'content-type': 'application/json' },
                         body: JSON.stringify({ view: {} })
@@ -176,7 +176,7 @@ describe('client.js', function() {
         expect(err).to.deep.equal({ statusCode: 401, message: 'billybobbump' });
         expect(request).calledWith(
           sinon.match({
-                        url: 'http://localhost:1234/authorized/abcd/1234',
+                        url: 'http://localhost:1234/permissions/abcd/1234',
                         method: 'POST',
                         headers: { 'x-tidepool-session-token': '1234', 'content-type': 'application/json' },
                         body: JSON.stringify({ view: {} })
