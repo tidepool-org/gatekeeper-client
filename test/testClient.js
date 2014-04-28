@@ -120,7 +120,7 @@ describe('client.js', function() {
         expect(result).to.deep.equal({ view: {} });
         expect(request).calledWith(
           sinon.match({
-                        url: 'http://localhost:1234/access/group/1234',
+                        url: 'http://localhost:1234/access/groups/1234',
                         method: 'GET',
                         headers: { 'x-tidepool-session-token': '1234'}
                       }),
@@ -138,7 +138,7 @@ describe('client.js', function() {
         expect(err).to.deep.equal({ statusCode: 401, message: 'billybobbump' });
         expect(request).calledWith(
           sinon.match({
-                        url: 'http://localhost:1234/access/group/1234',
+                        url: 'http://localhost:1234/access/groups/1234',
                         method: 'GET',
                         headers: { 'x-tidepool-session-token': '1234'}
                       }),
