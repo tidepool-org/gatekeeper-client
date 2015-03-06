@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "mocha": "1.18.2",
-    "salinity": "0.0.5"
+    "salinity": "0.0.7"
   }
 }
