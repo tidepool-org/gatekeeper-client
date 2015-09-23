@@ -1,6 +1,6 @@
 {
   "name": "tidepool-gatekeeper",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Authorization server and client",
   "main": "lib/index.js",
   "directories": {
