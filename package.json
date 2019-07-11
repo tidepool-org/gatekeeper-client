@@ -14,7 +14,7 @@
   },
   "license": "BSD-2-Clause",
   "dependencies": {
-    "amoeba": "0.5.0",
+    "amoeba": "0.6.0",
     "lodash": "4.17.11"
   },
   "devDependencies": {
