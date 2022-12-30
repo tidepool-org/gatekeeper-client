@@ -17,7 +17,7 @@
     "amoeba": "0.6.0"
   },
   "devDependencies": {
-    "mocha": "6.1.4",
+    "mocha": "10.2.0",
     "salinity": "0.0.8"
   },
   "scripts": {}
