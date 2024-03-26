@@ -1,12 +1,15 @@
 {
   "name": "tidepool-gatekeeper",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Authorization server and client",
   "main": "lib/index.js",
   "directories": {
     "lib": "./lib/index"
   },
-  "repository": "https://github.com/tidepool-org/gatekeeper-client.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tidepool-org/gatekeeper-client.git"
+  },
   "author": {
     "name": "Eric Tschetter",
     "email": "cheddar@tidepool.org",
@@ -14,11 +17,18 @@
   },
   "license": "BSD-2-Clause",
   "dependencies": {
-    "amoeba": "0.6.0"
+    "amoeba": "1.2.2"
   },
   "devDependencies": {
-    "mocha": "6.1.4",
-    "salinity": "0.0.8"
+    "jshint": "^2.12.0",
+    "mocha": "^10.3.0",
+    "salinity": "0.0.9"
   },
-  "scripts": {}
+  "overrides": {
+    "serialize-javascript@>=6.0.0 <6.0.2": "6.0.2"
+  },
+  "scripts": {
+    "lint": "jshint lib test",
+    "test": "mocha"
+  }
 }
