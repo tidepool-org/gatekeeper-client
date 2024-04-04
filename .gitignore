@@ -23,3 +23,7 @@ node_modules
 
 *.iml
 .idea
+
+.vscode/
+*.envrc
+*.env
