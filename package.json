@@ -1,6 +1,6 @@
 {
   "name": "tidepool-gatekeeper",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Authorization server and client",
   "main": "lib/index.js",
   "directories": {
@@ -17,12 +17,12 @@
   },
   "license": "BSD-2-Clause",
   "dependencies": {
-    "amoeba": "1.2.3"
+    "amoeba": "1.2.4"
   },
   "devDependencies": {
     "jshint": "^2.12.0",
     "mocha": "^10.3.0",
-    "salinity": "0.0.10"
+    "salinity": "0.0.11"
   },
   "overrides": {
     "serialize-javascript@>=6.0.0 <6.0.2": "6.0.2"
